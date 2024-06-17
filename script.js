@@ -63,9 +63,10 @@ for(let i=0; i< listeMots.length; i++){
 
 
 /*********** avec la boucle while et for *************/
-//l'user doit obligatoirement taper le bon mot pour passer à l'etapes suivante
-
+//l'user doit obligatoirement taper le bon mot pour passer à l'etapes suivante 
+/*
 const listeMots = ['Cachalot', 'Pétunia', 'Serviette']
+
 console.log("Vous devez avoir bon pour obligatoirement passer à l'étape suivante")
 let essaie =0
 for(i=0; i< listeMots.length; i++ ){
@@ -77,5 +78,47 @@ for(i=0; i< listeMots.length; i++ ){
     }
 console.log("Votre nombre d'erreur est de :"+ essaie)
 
+*/
 
+/**** Demande à l'utilisateur de jouer avec liste de mots ou phrases */
 
+const listeMots = ['Cachalot', 'Pétunia', 'Serviette']
+const listePhrases = ['Je nage', 'je range', 'Je vais me doucher']
+
+listePhrases.push('will we win')
+console.log(listePhrases)
+
+let score = 0
+console.log(score)
+
+let choix= prompt('choisisez de jouer en tapant : phrase ou mot')
+
+//console.log(choix)
+
+if(choix=== "mot"){
+    console.log("vous avez choisi les mots")
+        for(let i=0; i< listeMots.length; i++){
+            let entreMot = prompt("entrer le mot :" + listeMots[i])
+                if(entreMot === listeMots[i]){       
+                    score = score + 1
+                    console.log(score)
+                    console.log("Bravo vous avez gagner un point")
+                }else{
+                    console.log("vous avez fait une faute")
+                    console.log(score)
+                }
+            }
+}else{
+    console.log("vous avez choisi les phrases")
+        for(let i=0; i< listePhrases.length; i++){
+            let entreMot = prompt("entrer le mot :" + listePhrases[i])
+                if(entreMot === listePhrases[i]){       
+                    score = score + 1
+                    console.log(score)
+                    console.log("Bravo vous avez gagner un point")
+                }else{
+                    console.log("vous avez fait une faute")
+                    console.log(score)
+                }
+            }
+}
