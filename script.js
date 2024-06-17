@@ -41,7 +41,7 @@ if(entreMot3 === listeMots[2]){
 */
 
 /**********Avec boucle FOR *************/
-
+/*
 const listeMots = ['Cachalot', 'Pétunia', 'Serviette']
 
 let score = 0
@@ -59,23 +59,23 @@ for(let i=0; i< listeMots.length; i++){
             console.log(score)
         }
     }
-
+*/
 
 
 /*********** avec la boucle while et for *************/
 //l'user doit obligatoirement taper le bon mot pour passer à l'etapes suivante
-/*
-const listeMots = ['Cachalot', 'Pétunia', 'Serviette']
-let score = 0
-console.log(score)
 
-for(i=0; i< listeMots.lenght ){
-    let mot = prompt(listeMots[i])
+const listeMots = ['Cachalot', 'Pétunia', 'Serviette']
+console.log("Vous devez avoir bon pour obligatoirement passer à l'étape suivante")
+let essaie =0
+for(i=0; i< listeMots.length; i++ ){
+    let mot = prompt("entrer le mot :" + listeMots[i])
         while(mot != listeMots[i]){
             mot = prompt("erreur, réessayer : " + listeMots[i])
+            essaie++
         }
     }
-*/
+console.log("Votre nombre d'erreur est de :"+ essaie)
 
 
 
