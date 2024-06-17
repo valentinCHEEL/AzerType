@@ -129,9 +129,7 @@ console.log("Votre nombre d'erreur est de :"+ essaie)
 
 /*********** exo function ************/
 
-    //liste pour le jeu
-    const listeMots = ['Cachalot', 'Pétunia', 'Serviette']
-    const listePhrases = ['Je nage', 'je range', 'Je vais me doucher']
+
 
 
     //return permet d'utiliser le résultat plus tard en dehors de la function
@@ -179,7 +177,3 @@ console.log("Votre nombre d'erreur est de :"+ essaie)
         afficherResultat(score, nbQuestion)
     }
 
-
-    //On apelle la fonction pour lancer le jeu
-
-    lancerJeu()
