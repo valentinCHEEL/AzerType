@@ -94,7 +94,9 @@ console.log(score)
 let choix= prompt('choisisez de jouer en tapant : phrase ou mot')
 
 //console.log(choix)
-
+while(choix != "mot" && choix != "phrase"){
+    choix = prompt('erreur, réessayer : tapez mot ou phrase')
+}
 if(choix=== "mot"){
     console.log("vous avez choisi les mots")
         for(let i=0; i< listeMots.length; i++){
