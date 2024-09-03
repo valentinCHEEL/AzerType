@@ -13,4 +13,4 @@ console.log(spanScore)
 let listeBtnRadio = document.querySelectorAll(".optionSource input")
 console.log(listeBtnRadio)
 //On apelle la fonction pour lancer le jeu
-//lancerJeu()
+lancerJeu()
